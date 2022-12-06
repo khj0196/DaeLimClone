@@ -210,7 +210,7 @@ body header .header-main .header-right {
 }
 body header .header-main .header-right ul {
   position: absolute;
-  left: 0;
+  right: 10%;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -219,7 +219,7 @@ body header .header-main .header-right ul li {
   padding: 0 11px;
   position: relative;
 }
-body header .header-main .header-right ul li:not(:nth-child(4))::before {
+body header .header-main .header-right ul li:not(:nth-child(2))::before {
   content: "";
   width: 1px;
   height: 13px;

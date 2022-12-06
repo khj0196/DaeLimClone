@@ -220,14 +220,14 @@ body {
         position: relative;
         ul {
           position: absolute;
-          left: 0;
+          right: 10%;
           top: 50%;
           transform: translateY(-50%);
           li {
             display: inline-block;
             padding: 0 11px;
             position: relative;
-            &:not(:nth-child(4)) {
+            &:not(:nth-child(2)) {
               &::before {
                 content: "";
                 width: 1px;

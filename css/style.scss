@@ -220,7 +220,7 @@ body {
         position: relative;
         ul {
           position: absolute;
-          right: 10%;
+          left: 0;
           top: 50%;
           transform: translateY(-50%);
           li {
@@ -912,7 +912,7 @@ body {
                   height: 1px;
                   background: #252525;
                   margin: 0 20px 0 18px;
-                  opacity: 0.2;
+                  opacity: 0.1;
                 }
                 > .sec02-sub {
                   font-size: 14px;
@@ -1151,9 +1151,6 @@ body {
               }
               &:hover {
                 width: 58%;
-                &::after {
-                  opacity: 0.7;
-                }
                 div {
                   p {
                     &:last-child {
@@ -1206,6 +1203,10 @@ body {
             }
             .on {
               width: 58%;
+              &::after {
+                background: black;
+                opacity: 0.7;
+              }
             }
           }
         }
@@ -1216,12 +1217,12 @@ body {
     background-color: #111b2a;
     .footer-top {
       background-color: #111b2a;
+      padding: 0 15px;
       .page {
         position: relative;
         max-width: 1516px;
         width: 100%;
         margin: 0 auto;
-        padding: 0 15px;
         display: flex;
         padding: 97px 0 80px;
         justify-content: space-between;
@@ -1249,7 +1250,7 @@ body {
           }
         }
         .footer-middle{
-          width: 33%;
+          width: 40%;
           text-align: center;
           > a {
             display: block;

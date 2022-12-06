@@ -2,7 +2,6 @@
   header {
     .header-main {
       .header-right {
-        width: 300px;
         ul {
           li {
             font-size: 12px;
@@ -95,6 +94,20 @@
               }
             }
           }
+          .sec04 {
+            .sec04-box {
+              .right {
+                .text {
+                  .hash {
+                    padding: 0 10px;
+                    height: 32px;
+                    line-height: 30px;
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -148,10 +161,56 @@
                           font-size: 16px;
                         }
                       }
+                      .bottom-txt {
+                        > p {
+                          font-size: 26px;
+                          letter-spacing: -1.38px;
+                        }
+                      }
                     }
                   }
                 }
               }
+            }
+          }
+          .sec02-text03 {
+            .sec02-last {
+              font-size: 15px;
+            }
+          }
+        }
+        .mid {
+          > p {
+            margin: 30px 0 10px;
+            font-size: 48px;
+          }
+          .mid-img-box {
+            .img-box-con {
+              .contain {
+                .img-txt {
+                  .main_con {
+                    font-size: 16px;
+                  }
+                }
+                .img-bottom {
+                  > ul {
+                    > li {
+                      width: 15.66%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .product {
+          .product-txt {
+            .inTxt-sub {
+              font-size: 48px;
+              margin: 30px 0 10px;
+            }
+            .sec02-last {
+              font-size: 15px;
             }
           }
         }
@@ -209,9 +268,9 @@
                 }
               }
               .on {
-                > div {
-                  > p {
-                    &:last-child {
+                div {
+                  p {
+                    &:last-child{
                       font-size: 36px;
                     }
                   }
@@ -226,6 +285,17 @@
 }
 @media screen and (max-width:1366px) {
   body {
+    header {
+      .header-main {
+        .header-right {
+          ul {
+            li {
+              padding: 0 8px;
+            }
+          }
+        }
+      }
+    }
     main {
       div {
         .sec01 {
@@ -238,6 +308,96 @@
             }
           }
         }
+        .sec02 {
+          .sec02-text02 {
+            margin: 15px 0 10px;
+            > .sec02-center {
+              font-size: 40px;
+            }
+            > .sec02-sub {
+              font-size: 40px;
+            }
+          }
+        }
+        .mid {
+          > p {
+            font-size: 40px;
+          }
+          .mid-img-box {
+            .img-box-con {
+              .contain {
+                .img-txt {
+                  .main_title {
+                    font-size: 50px;
+                    letter-spacing: -3.48px;
+                  }
+                  .main_con {
+                    font-size: 15px;
+                  }
+                }
+                .img-bottom {
+                  > ul {
+                    li {
+                      &::before {
+                        padding: 0;
+                        width: 180px;
+                        height: 220px;
+                      }
+                      .main_con {
+                        font-size: 14px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .product {
+          .product-txt {
+            .inTxt-sub {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+    footer {
+      .footer-top {
+        .page {
+          .footer-site {
+            > ul {
+              li {
+                a {
+                  width: 60px;
+                  height: 60px;
+                  line-height: 58px;
+                }
+              }
+            }
+          }
+          .family {
+            .inBox {
+              span {
+                line-height: 58px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1280px) {
+  body {
+    header {
+      .header-main {
+        .header-right {
+          width: 300px;
+        }
+      }
+      .header-middle {
+        display: none;
       }
     }
   }

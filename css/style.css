@@ -210,7 +210,7 @@ body header .header-main .header-right {
 }
 body header .header-main .header-right ul {
   position: absolute;
-  right: 10%;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -862,7 +862,7 @@ body main div .sec05 .sec05-top .bottom-logo .inTxt .inTxt-left-top > .sec02-bar
   height: 1px;
   background: #252525;
   margin: 0 20px 0 18px;
-  opacity: 0.2;
+  opacity: 0.1;
 }
 body main div .sec05 .sec05-top .bottom-logo .inTxt .inTxt-left-top > .sec02-sub {
   font-size: 14px;
@@ -1083,9 +1083,6 @@ body main div .sec06 .sec06-bottom .sec06-ul .sec06-li::after {
 body main div .sec06 .sec06-bottom .sec06-ul .sec06-li:hover {
   width: 58%;
 }
-body main div .sec06 .sec06-bottom .sec06-ul .sec06-li:hover::after {
-  opacity: 0.7;
-}
 body main div .sec06 .sec06-bottom .sec06-ul .sec06-li:hover div p:last-child {
   font-size: 42px;
 }
@@ -1131,18 +1128,22 @@ body main div .sec06 .sec06-bottom .sec06-ul .sec06-li div p:last-child::before 
 body main div .sec06 .sec06-bottom .sec06-ul .on {
   width: 58%;
 }
+body main div .sec06 .sec06-bottom .sec06-ul .on::after {
+  background: black;
+  opacity: 0.7;
+}
 body footer {
   background-color: #111b2a;
 }
 body footer .footer-top {
   background-color: #111b2a;
+  padding: 0 15px;
 }
 body footer .footer-top .page {
   position: relative;
   max-width: 1516px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
   display: flex;
   padding: 97px 0 80px;
   justify-content: space-between;
@@ -1171,7 +1172,7 @@ body footer .footer-top .page .footer-site > ul li a {
   line-height: 69px;
 }
 body footer .footer-top .page .footer-middle {
-  width: 33%;
+  width: 40%;
   text-align: center;
 }
 body footer .footer-top .page .footer-middle > a {
@@ -1273,9 +1274,6 @@ body footer .footer-last {
 }
 
 @media screen and (max-width: 1745px) {
-  header .header-main .header-right {
-    width: 300px;
-  }
   header .header-main .header-right ul li {
     font-size: 12px;
   }
@@ -1322,6 +1320,12 @@ body footer .footer-last {
   body main div .mid .mid-img-box .img-box-con .contain .img-bottom > ul li .main_con {
     font-size: 16px;
   }
+  body main div .sec04 .sec04-box .right .text .hash {
+    padding: 0 10px;
+    height: 32px;
+    line-height: 30px;
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 1440px) {
   body header .header-main {
@@ -1341,6 +1345,30 @@ body footer .footer-last {
   }
   body main div .sec02 .sec02-img01 ul li a .txt-ani .txt-sub .top-txt p {
     font-size: 16px;
+  }
+  body main div .sec02 .sec02-img01 ul li a .txt-ani .txt-sub .bottom-txt > p {
+    font-size: 26px;
+    letter-spacing: -1.38px;
+  }
+  body main div .sec02 .sec02-text03 .sec02-last {
+    font-size: 15px;
+  }
+  body main div .mid > p {
+    margin: 30px 0 10px;
+    font-size: 48px;
+  }
+  body main div .mid .mid-img-box .img-box-con .contain .img-txt .main_con {
+    font-size: 16px;
+  }
+  body main div .mid .mid-img-box .img-box-con .contain .img-bottom > ul > li {
+    width: 15.66%;
+  }
+  body main div .product .product-txt .inTxt-sub {
+    font-size: 48px;
+    margin: 30px 0 10px;
+  }
+  body main div .product .product-txt .sec02-last {
+    font-size: 15px;
   }
   body main div .sec05 .sec05-top .top-logo div {
     font-size: 150px;
@@ -1362,15 +1390,64 @@ body footer .footer-last {
   body main div .sec06 .sec06-bottom .sec06-ul .sec06-li div p:last-child {
     font-size: 24px;
   }
-  body main div .sec06 .sec06-bottom .sec06-ul .on > div > p:last-child {
+  body main div .sec06 .sec06-bottom .sec06-ul .on div p:last-child {
     font-size: 36px;
   }
 }
 @media screen and (max-width: 1366px) {
+  body header .header-main .header-right ul li {
+    padding: 0 8px;
+  }
   body main div .sec01 .sec01-text .main_title {
     font-size: 34px;
     letter-spacing: -4.08px;
     font-weight: 500;
     margin: 10px 0 28px;
+  }
+  body main div .sec02 .sec02-text02 {
+    margin: 15px 0 10px;
+  }
+  body main div .sec02 .sec02-text02 > .sec02-center {
+    font-size: 40px;
+  }
+  body main div .sec02 .sec02-text02 > .sec02-sub {
+    font-size: 40px;
+  }
+  body main div .mid > p {
+    font-size: 40px;
+  }
+  body main div .mid .mid-img-box .img-box-con .contain .img-txt .main_title {
+    font-size: 50px;
+    letter-spacing: -3.48px;
+  }
+  body main div .mid .mid-img-box .img-box-con .contain .img-txt .main_con {
+    font-size: 15px;
+  }
+  body main div .mid .mid-img-box .img-box-con .contain .img-bottom > ul li::before {
+    padding: 0;
+    width: 180px;
+    height: 220px;
+  }
+  body main div .mid .mid-img-box .img-box-con .contain .img-bottom > ul li .main_con {
+    font-size: 14px;
+  }
+  body main div .product .product-txt .inTxt-sub {
+    font-size: 40px;
+  }
+  body footer .footer-top .page .footer-site > ul li a {
+    width: 60px;
+    height: 60px;
+    line-height: 58px;
+  }
+  body footer .footer-top .page .family .inBox span {
+    line-height: 58px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  body header .header-main .header-right {
+    width: 300px;
+  }
+  body header .header-middle {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

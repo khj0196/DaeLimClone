@@ -1,0 +1,102 @@
+@media screen and (max-width: 1745px) {
+  header .header-main .header-right {
+    width: 300px;
+  }
+  header .header-main .header-right ul li {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1680px) {
+  body .side {
+    width: 60px;
+    height: 60px;
+    border-radius: 12.5px;
+  }
+  body .side p {
+    display: none !important;
+  }
+  body .side-bar {
+    right: 21px;
+  }
+  body .side-bar .bar {
+    min-width: 60px;
+  }
+  body .side-bar .bar ul li {
+    width: 60px;
+    height: 60px;
+  }
+  body .side-bar .bar ul li a p {
+    display: none !important;
+  }
+  body .side-bar p {
+    display: none;
+  }
+  body main div .sec02 .sec02-img01 ul li:hover a .txt-ani .txt-sub .top-txt p {
+    font-size: 20px;
+  }
+  body main div .sec02 .sec02-img01 ul li a .txt-ani {
+    padding: 20px;
+  }
+  body main div .mid .mid-img-box .img-box-con .contain .img-bottom > ul li::before {
+    width: 220px;
+    height: 220px;
+    padding: 0;
+  }
+  body main div .mid .mid-img-box .img-box-con .contain .img-bottom > ul li .more-view {
+    margin-top: 20px;
+  }
+  body main div .mid .mid-img-box .img-box-con .contain .img-bottom > ul li .main_con {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  body header .header-main {
+    padding: 0 15px 0;
+  }
+  body header .header-main .header-middle > ul > li > a {
+    font-size: 14px;
+  }
+  body header .header-main .header-right ul li a {
+    font-size: 12px;
+  }
+  body main div .sec01 .sec01-text .main_title {
+    font-size: 50px;
+  }
+  body main div .sec01 .sec01-text .main_con {
+    font-size: 16px;
+  }
+  body main div .sec02 .sec02-img01 ul li a .txt-ani .txt-sub .top-txt p {
+    font-size: 16px;
+  }
+  body main div .sec05 .sec05-top .top-logo div {
+    font-size: 150px;
+  }
+  body main div .sec05 .sec05-top .bottom-logo .inTxt .inTxt-left-btm div .inTxt-sub {
+    font-size: 48px;
+    margin: 30px 0 10px;
+  }
+  body main div .sec05 .sec05-top .bottom-logo .inTxt .inTxt-left-btm div .sec02-last {
+    font-size: 15px;
+  }
+  body main div .sec06 .sec05-top .bottom-logo .inTxt .inTxt-left-btm > div .inTxt-sub {
+    font-size: 48px;
+    margin: 30px 0 10px;
+  }
+  body main div .sec06 .sec05-top .bottom-logo .inTxt .inTxt-left-btm > div .sec02-last {
+    font-size: 15px;
+  }
+  body main div .sec06 .sec06-bottom .sec06-ul .sec06-li div p:last-child {
+    font-size: 24px;
+  }
+  body main div .sec06 .sec06-bottom .sec06-ul .on > div > p:last-child {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  body main div .sec01 .sec01-text .main_title {
+    font-size: 34px;
+    letter-spacing: -4.08px;
+    font-weight: 500;
+    margin: 10px 0 28px;
+  }
+}/*# sourceMappingURL=media.css.map */

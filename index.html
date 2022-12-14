@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600&family=Noto+Sans+KR:wght@100;300;400;500;700&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js" defer></script>
   <script src="./index.js" defer></script>
 </head>
 <body>
@@ -64,15 +64,55 @@
   <main>
     <div>
       <section class="sec01">
-        <div class="sec01-text">
-          <span class="sub_title">Since.1966</span>
-          <span class="main_title">100년을 향한 57번째 도약</span>
-          <span class="main_con">반세기 역사<br>
-            욕실을 넘어 물과 손이 닿는 모든 곳으로<br>
-            프리미엄의 명성을 이어나가고 있습니다.
-          </span>
+        <div>
+          <div class="change">
+            <div class="sec01-text">
+              <span class="sub_title">Since.1966</span>
+              <span class="main_title">100년을 향한 57번째 도약</span>
+              <span class="main_con">반세기 역사<br>
+                욕실을 넘어 물과 손이 닿는 모든 곳으로<br>
+                프리미엄의 명성을 이어나가고 있습니다.
+              </span>
+            </div>
+            <img src="./img/202208121159343042.jpg" alt="사진">
+          </div>
+          <div class="change">
+            <div class="sec01-text">
+              <span class="sub_title">THE BEST</span>
+              <span class="main_title">우리의 독보적인 우월함</span>
+              <span class="main_con">최고•최대•최초의 수식어<br>
+                <br>
+                욕실•주거 문화의 대표 브랜드로서<br>
+                세계의 중심에 서는 자부심입니다.
+              </span>
+            </div>
+            <img src="./img/202210261610195341.png" alt="사진">
+          </div>
+          <div class="change">
+            <div class="sec01-text">
+              <span class="sub_title">SMARTTECH</span>
+              <span class="main_title">환경과 미래 세대를 위한 선택</span>
+              <span class="main_con">환경과 미래를 생각하는 첨단 기술<br>
+                <br>
+                우리의 실용적이고 미래 지향적인 기술은<br>
+                시대의 흐름에 유연하게 대응하며 진화하고 있습니다.
+              </span>
+            </div>
+            <img src="./img/202210261511181921.jpg" alt="사진">
+          </div>
+          <div class="change">
+            <div class="sec01-text">
+              <span class="sub_title">LAND MARK</span>
+              <span class="main_title">섬세하게 채워지는 품격의 중심</span>
+              <span class="main_con">랜드마크 · 고급 주거 공간의 중심<br>
+                <br>
+                최상의 프리미엄 주거 공간, 최고급 호텔의 욕실이<br>
+                대림바스로 채워지고 있습니다.
+              </span>
+            </div>
+            <img src="./img/20220812122122912.jpg" alt="사진">
+          </div>
         </div>
-        <img src="./img/202208121159343042.jpg" alt="">
         <div class="slide-menu">
         <div class="slide01">
           <ul>
@@ -95,11 +135,6 @@
               <div class="slide-bar"></div>
               <a href="#"><p>섬세하게 채워지는 품격의 중심<br></p>
               <p>LAND MARK</p></a>
-            </li>
-            <li>
-              <div class="slide-bar"></div>
-              <a href="#"><p>욕실은 가장 아름다운 방이여야 합니다<br></p>
-              <p>FIND DAELIM</p></a>
             </li>
           </ul>
         </div>
@@ -431,33 +466,5 @@
       </section>
     </div>
   </main>
-  <script>
-    const can = document.querySelectorAll('img.overImg')
-    const canLi = document.querySelectorAll('.middle-line')
-
-    idx = 0;
-    canLi.forEach(function(btn, key) {
-      btn.onmouseover = function () {
-        can[idx].classList.remove('first')
-        can[key].classList.add('first')
-
-        idx = key
-      }
-    })
-
-    const sec06 = document.querySelectorAll('.sec06-li')
-    
-    idx1 = 0;
-    sec06.forEach(function(btn, key) {
-      btn.onmouseover = function () {
-        sec06[idx1].classList.remove('on')
-        sec06[key].classList.add('on')
-
-        idx1 = key
-      }
-    })
-
-
-  </script>
 </body>
 </html>

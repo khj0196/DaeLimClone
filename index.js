@@ -74,12 +74,12 @@ const imgLi = document.querySelectorAll('.img-bottom > ul > li')
 const changeImg = document.querySelectorAll('.contain > .img-txt > div')
 const contents = document.querySelector('.mid-img-box')
 let imgData = [
-  {url:'../img/sec02_bg_0.png'},
-  {url:'../img/sec02_bg_1.png'},
-  {url:'../img/sec02_bg_2.png'},
-  {url:'../img/sec02_bg_3.png'},
-  {url:'../img/sec02_bg_4.png'},
-  {url:'../img/sec02_bg_5.png'}
+  {url:'./img/sec02_bg_0.png'},
+  {url:'./img/sec02_bg_1.png'},
+  {url:'./img/sec02_bg_2.png'},
+  {url:'./img/sec02_bg_3.png'},
+  {url:'./img/sec02_bg_4.png'},
+  {url:'./img/sec02_bg_5.png'}
 ]
 let changeIdx = 0;
 imgLi.forEach(function(btn, key) {
@@ -139,7 +139,6 @@ window.addEventListener('scroll', function() {
     content9.classList.add('on')
   }
   if (content10.offsetTop+6700 - window.innerHeight * 0.8 < window.pageYOffset) {
-    console.log(content10)
     content10.classList.add('active')
   }
 })

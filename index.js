@@ -60,7 +60,7 @@ elBtn.forEach(function(btn, key) {
     idx = key
   })
 })
-
+//이미지 슬라이드
 function animation (key) {
   try {
     move = elChange[key].offsetLeft
@@ -69,7 +69,28 @@ function animation (key) {
   // console.log(move)
   elDiv.style = `transform: translateX(-${move}px)`
 }
-
+//호버시 이미지 변경
+const imgLi = document.querySelectorAll('.img-bottom > ul > li')
+const changeImg = document.querySelectorAll('.contain > .img-txt > div')
+const contents = document.querySelector('.mid-img-box')
+let imgData = [
+  {url:'../img/sec02_bg_0.png'},
+  {url:'../img/sec02_bg_1.png'},
+  {url:'../img/sec02_bg_2.png'},
+  {url:'../img/sec02_bg_3.png'},
+  {url:'../img/sec02_bg_4.png'},
+  {url:'../img/sec02_bg_5.png'}
+]
+let changeIdx = 0;
+imgLi.forEach(function(btn, key) {
+  btn.onclick = function() {
+    changeImg[changeIdx].classList.remove('check')
+    changeImg[key].classList.add('check')
+    changeIdx = key
+    contents.style.backgroundImage = `url(${imgData[key].url})`
+  }
+})
+console.log(imgData[0].url)
 let aniIdx = 0;
 elSlide.forEach(function(btn, key) {
   btn.onclick = function() {
@@ -78,7 +99,7 @@ elSlide.forEach(function(btn, key) {
     aniIdx = key
   }
 })
-
+//아래에서 위로 슬라이드 효과
 const content1 = document.querySelector('.sec02 > div:nth-of-type(1)')
 const content2 = document.querySelector('.sec02 > div:nth-of-type(2)')
 const content3 = document.querySelector('.mid > div:nth-of-type(1)')

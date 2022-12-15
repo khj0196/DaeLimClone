@@ -590,6 +590,12 @@ body main div .mid .mid-img-box .img-box-con .contain {
 body main div .mid .mid-img-box .img-box-con .contain .img-txt {
   text-align: center;
 }
+body main div .mid .mid-img-box .img-box-con .contain .img-txt .img-con {
+  display: none;
+}
+body main div .mid .mid-img-box .img-box-con .contain .img-txt .check {
+  display: block;
+}
 body main div .mid .mid-img-box .img-box-con .contain .img-txt .sub_title {
   display: block;
   font-size: 18px;

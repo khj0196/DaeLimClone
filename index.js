@@ -114,10 +114,10 @@ window.addEventListener('scroll', function() {
   if (content8.offsetTop+475 - window.innerHeight * 0.8 < window.pageYOffset) {
     content8.classList.add('on')
   }
-  if (content9.offsetTop+6000 - window.innerHeight * 0.8 < window.pageYOffset) {
+  if (content9.offsetTop+6700 - window.innerHeight * 0.8 < window.pageYOffset) {
     content9.classList.add('on')
   }
-  if (content10.offsetTop+6200 - window.innerHeight * 0.8 < window.pageYOffset) {
+  if (content10.offsetTop+6700 - window.innerHeight * 0.8 < window.pageYOffset) {
     console.log(content10)
     content10.classList.add('active')
   }

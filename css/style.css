@@ -261,9 +261,8 @@ body main div .sec01 .change {
 }
 body main div .sec01 .change .sec01-text {
   position: absolute;
-  left: 50%;
   top: calc(50% - 65px);
-  transform: translate(-50%, -50%);
+  transform: translateY(0%);
   display: inline-block;
   z-index: 9;
   max-width: 1516px;
@@ -272,6 +271,8 @@ body main div .sec01 .change .sec01-text {
   padding: 0 15px;
   z-index: 3;
   text-align: center;
+  opacity: 0;
+  transition: 1s;
 }
 body main div .sec01 .change .sec01-text .sub_title {
   font-size: 18px;
@@ -292,11 +293,19 @@ body main div .sec01 .change .sec01-text span {
   display: block;
   color: white;
 }
+body main div .sec01 .change .sec01-text .active {
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
 body main div .sec01 .change > img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+body main div .sec01 .change .active {
+  opacity: 1;
+  transform: translateY(-50%);
 }
 body main div .sec01 .slide-menu {
   position: absolute;
@@ -339,17 +348,6 @@ body main div .sec01 .slide-menu .slide01 > ul > li > .slide-bar::before {
   width: 0;
   background-color: #326aff;
 }
-body main div .sec01 .slide-menu .slide01 > ul > li:hover > .slide-bar::before {
-  width: 100%;
-  transition: 3s;
-  background-color: #326aff;
-}
-body main div .sec01 .slide-menu .slide01 > ul > li:hover > a > p:nth-child(1) {
-  color: white;
-}
-body main div .sec01 .slide-menu .slide01 > ul > li:hover > a > p:nth-child(2) {
-  color: white;
-}
 body main div .sec01 .slide-menu .slide01 > ul > li > a > p {
   text-align: left;
 }
@@ -363,10 +361,26 @@ body main div .sec01 .slide-menu .slide01 > ul > li > a > p:nth-child(2) {
   color: rgba(255, 255, 255, 0.5);
   transition: 0.3s;
 }
+body main div .sec01 .slide-menu .slide01 > ul .on > .slide-bar::before {
+  width: 100%;
+  transition: 3s;
+  background-color: #326aff;
+}
+body main div .sec01 .slide-menu .slide01 > ul .on > a > p:nth-child(1) {
+  color: white;
+}
+body main div .sec01 .slide-menu .slide01 > ul .on > a > p:nth-child(2) {
+  color: white;
+}
 body main div .sec02 {
   padding: 105px 0 140px;
 }
-body main div .sec02 .sec02-text01 {
+body main div .sec02 .effect {
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(50%);
+}
+body main div .sec02 .effect .sec02-text01 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -374,7 +388,7 @@ body main div .sec02 .sec02-text01 {
   font-weight: 500;
   opacity: 0.2;
 }
-body main div .sec02 .sec02-text01 > .sec02-bar {
+body main div .sec02 .effect .sec02-text01 > .sec02-bar {
   display: inline-block;
   width: 128px;
   height: 1px;
@@ -382,25 +396,25 @@ body main div .sec02 .sec02-text01 > .sec02-bar {
   margin: 0 20px 0 18px;
   opacity: 0.2;
 }
-body main div .sec02 .sec02-text02 {
+body main div .sec02 .effect .sec02-text02 {
   margin: 47px 0 20px;
   line-height: 1;
   display: flex;
   justify-content: center;
 }
-body main div .sec02 .sec02-text02 > .sec02-sub {
+body main div .sec02 .effect .sec02-text02 > .sec02-sub {
   font-family: "Exo 2", "Noto Sans KR", sans-serif;
   font-size: 58px;
   font-weight: 300;
 }
-body main div .sec02 .sec02-text02 > .sec02-center {
+body main div .sec02 .effect .sec02-text02 > .sec02-center {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0;
   padding: 0 10px;
   font-size: 58px;
   font-weight: 300;
 }
-body main div .sec02 .sec02-text03 .sec02-last {
+body main div .sec02 .effect .sec02-text03 .sec02-last {
   font-size: 18px;
   font-weight: normal;
   color: rgb(125, 125, 125);
@@ -414,6 +428,9 @@ body main div .sec02 .sec02-img01 {
   margin: 0 auto;
   margin-top: 47px;
   padding: 0 15px;
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(50%);
 }
 body main div .sec02 .sec02-img01 > ul {
   max-width: 1516px;
@@ -516,7 +533,16 @@ body main div .sec02 .sec02-img01 > ul > li > a .txt-ani .txt-sub > .bottom-txt 
   font-weight: 500;
   letter-spacing: -2.38px;
 }
-body main div .mid .sec02-text01 {
+body main div .sec02 .on {
+  opacity: 1;
+  transform: translateY(0%);
+}
+body main div .mid .effect {
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(50%);
+}
+body main div .mid .effect .sec02-text01 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -524,7 +550,7 @@ body main div .mid .sec02-text01 {
   font-weight: 500;
   opacity: 0.2;
 }
-body main div .mid .sec02-text01 > .sec02-bar {
+body main div .mid .effect .sec02-text01 > .sec02-bar {
   display: inline-block;
   width: 128px;
   height: 1px;
@@ -532,12 +558,16 @@ body main div .mid .sec02-text01 > .sec02-bar {
   margin: 0 20px 0 18px;
   opacity: 0.2;
 }
-body main div .mid > p {
+body main div .mid .effect > p {
   margin: 47px 0 20px;
   font-size: 58px;
   font-weight: 300;
   line-height: 1;
   text-align: center;
+}
+body main div .mid .on {
+  opacity: 1;
+  transform: translateY(0%);
 }
 body main div .mid .mid-img-box {
   position: relative;
@@ -545,6 +575,9 @@ body main div .mid .mid-img-box {
   background: url(../img/sec02_bg_0.png) no-repeat center center;
   background-size: cover;
   height: 752px;
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(50%);
 }
 body main div .mid .mid-img-box .img-box-con .contain {
   position: absolute;
@@ -653,6 +686,10 @@ body main div .mid .mid-img-box .img-box-con .contain .img-bottom > ul > li .mor
   margin-top: 35px;
   opacity: 1;
 }
+body main div .mid .on {
+  opacity: 1;
+  transform: translateY(0%);
+}
 body main div .product {
   padding: 100px 0 60px;
 }
@@ -662,6 +699,9 @@ body main div .product .product-txt {
   margin: 0 auto;
   padding: 0 15px;
   text-align: center;
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(50%);
 }
 body main div .product .product-txt .inTxt {
   display: flex;
@@ -696,6 +736,10 @@ body main div .product .product-txt .sec02-last {
   font-weight: normal;
   color: rgb(125, 125, 125);
   letter-spacing: -0.54px;
+}
+body main div .product .on {
+  opacity: 1;
+  transform: translateY(0%);
 }
 body main div .sec04 {
   width: 100%;
@@ -854,11 +898,15 @@ body main div .sec05 {
   overflow: hidden;
 }
 body main div .sec05 .sec05-top {
-  position: relative;
   max-width: 1516px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+body main div .sec05 .sec05-top .top-logo {
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(50%);
 }
 body main div .sec05 .sec05-top .top-logo div {
   color: rgba(231, 233, 235, 0.25);
@@ -867,6 +915,15 @@ body main div .sec05 .sec05-top .top-logo div {
   line-height: 1;
   display: block;
   transition: 1s;
+}
+body main div .sec05 .sec05-top .on {
+  opacity: 1;
+  transform: translateY(0%);
+}
+body main div .sec05 .sec05-top .bottom-logo {
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(50%);
 }
 body main div .sec05 .sec05-top .bottom-logo .inTxt .inTxt-left-top {
   display: flex;
@@ -924,19 +981,33 @@ body main div .sec05 .sec05-top .bottom-logo .inTxt .inTxt-left-btm .inTxt-right
   line-height: 60px;
   font-size: 16px;
 }
+body main div .sec05 .sec05-top .on {
+  opacity: 1;
+  transform: translateY(0%);
+}
+body main div .sec05 .on {
+  opacity: 1;
+  transform: translateY(0%);
+}
 body main div .sec05 .img-box {
   position: relative;
   margin-top: 39px;
 }
+body main div .sec05 .img-box.on .line-txt .line {
+  opacity: 1;
+  transform: translateY(-50%);
+}
 body main div .sec05 .img-box img {
   width: 100%;
 }
-body main div .sec05 .img-box .line-txt {
-  width: 100%;
+body main div .sec05 .img-box .line-txt .line {
   position: absolute;
+  width: 100%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(0%);
   height: auto;
+  opacity: 0;
+  transition: 1s;
 }
 body main div .sec05 .img-box .line-txt .line ul {
   position: relative;
@@ -981,6 +1052,10 @@ body main div .sec05 .img-box .line-txt .line ul .middle-line > div .desc {
   margin-top: 56px;
   opacity: 0;
 }
+body main div .sec05 .img-box .on {
+  opacity: 1;
+  transform: translateY(0%);
+}
 body main div .sec05 .img-box .overImg {
   display: none;
 }
@@ -998,6 +1073,9 @@ body main div .sec06 .sec05-top {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(50%);
 }
 body main div .sec06 .sec05-top .top-logo div {
   color: rgba(231, 233, 235, 0.25);
@@ -1062,12 +1140,19 @@ body main div .sec06 .sec05-top .bottom-logo .inTxt .inTxt-left-btm .inTxt-right
   color: #326aff;
   line-height: 60px;
 }
+body main div .sec06 .on {
+  opacity: 1;
+  transform: translateY(0%);
+}
 body main div .sec06 .sec06-bottom {
   position: relative;
   max-width: 1516px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(50%);
 }
 body main div .sec06 .sec06-bottom .sec06-ul {
   padding-top: 50px;
@@ -1165,6 +1250,10 @@ body main div .sec06 .sec06-bottom .sec06-ul .on div p:last-child::before {
   background-color: white;
   opacity: 1;
   transition: 0.3s;
+}
+body main div .sec06 .active {
+  opacity: 1;
+  transform: translateY(0%);
 }
 body footer {
   background-color: #111b2a;

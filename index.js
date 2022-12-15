@@ -43,16 +43,21 @@ sec06.forEach(function(btn, key) {
     idx1 = key
   }
 })
+// 슬라이드 효과 관련 
+const elChange = document.querySelectorAll('.sec01 .change');
+const elBtn = document.querySelectorAll('.sec01 li');
+const elDiv = document.querySelector('.sec01 > div');
+const elSlide = document.querySelectorAll('.slide01 li');
+const elText = document.querySelectorAll('.change > .sec01-text');
 
-const elChange = document.querySelectorAll('.sec01 .change')
-const elBtn = document.querySelectorAll('.sec01 li')
-const aa = document.querySelector('.sec01 > div')
 let move;
 
 elBtn.forEach(function(btn, key) {
   btn.addEventListener('click', function() {
     animation(key)
-    
+    elText[idx].classList.remove('active')
+    elText[key].classList.add('active')
+    idx = key
   })
 })
 
@@ -62,5 +67,58 @@ function animation (key) {
   }
   catch{}
   // console.log(move)
-  aa.style = `transform: translateX(-${move}px)`
+  elDiv.style = `transform: translateX(-${move}px)`
 }
+
+let aniIdx = 0;
+elSlide.forEach(function(btn, key) {
+  btn.onclick = function() {
+    elSlide[aniIdx].classList.remove('on')
+    elSlide[key].classList.add('on')
+    aniIdx = key
+  }
+})
+
+const content1 = document.querySelector('.sec02 > div:nth-of-type(1)')
+const content2 = document.querySelector('.sec02 > div:nth-of-type(2)')
+const content3 = document.querySelector('.mid > div:nth-of-type(1)')
+const content4 = document.querySelector('.mid > .mid-img-box')
+const content5 = document.querySelector('.product > .product-txt')
+const content6 = document.querySelector('.sec05-top > .top-logo')
+const content7 = document.querySelector('.sec05-top > .bottom-logo')
+const content8 = document.querySelector('.img-box')
+const content9 = document.querySelector('.sec06 > .sec05-top')
+const content10 = document.querySelector('.sec06-bottom')
+window.addEventListener('scroll', function() {
+  if (content1.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {
+    content1.classList.add('on')
+  }
+  if (content2.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {
+    content2.classList.add('on')
+  }
+  if (content3.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {
+    content3.classList.add('on')
+  }
+  if (content4.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {
+    content4.classList.add('on')
+  }
+  if (content5.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {
+    content5.classList.add('on')
+  }
+  if (content6.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {
+    content6.classList.add('on')
+  }
+  if (content7.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {
+    content7.classList.add('on')
+  }
+  if (content8.offsetTop+475 - window.innerHeight * 0.8 < window.pageYOffset) {
+    content8.classList.add('on')
+  }
+  if (content9.offsetTop+6600 - window.innerHeight * 0.8 < window.pageYOffset) {
+    content9.classList.add('on')
+  }
+  if (content10.offsetTop+6600 - window.innerHeight * 0.8 < window.pageYOffset) {
+    console.log(content10)
+    content10.classList.add('active')
+  }
+})

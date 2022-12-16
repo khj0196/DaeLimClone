@@ -365,20 +365,11 @@ body {
                     background-color: #326aff;
                   }
                 }
-                > a {
-                  > p {
-                    text-align: left;
-                    &:nth-child(1) {
-                      font-size: 16px;
-                      color: rgba(255, 255, 255, 0.5);
-                      transition: 0.3s;
-                    }
-                    &:nth-child(2) {
-                      font-size: 12px;
-                      color: rgba(255, 255, 255, 0.5);
-                      transition: 0.3s;
-                    }
-                  }
+                p {
+                  text-align: left;
+                  font-size: 16px;
+                  color: rgba(255, 255, 255, 0.5);
+                  transition: 0.3s;
                 }
               }
               .on {
@@ -389,15 +380,8 @@ body {
                     background-color: #326aff;
                   }
                 }
-                > a {
-                  > p {
-                    &:nth-child(1) {
-                      color: white;
-                    }
-                    &:nth-child(2) {
-                      color: white;
-                    }
-                  }
+                p {
+                  color: white;
                 }
               }
             }
@@ -1411,6 +1395,13 @@ body {
             &:hover {
               background: white url(../icon/up_arr_b.png) no-repeat 88% center;
               border-radius: 18px 18px 0 0;
+              > .site-div {
+                height: 106px;
+                border-top: 1px solid rgba(86, 93, 104, 0.2);
+              }
+              > span {
+                color: black;
+              }
             }
             span {
               position: relative;
@@ -1424,14 +1415,6 @@ body {
               width: 100%;
               display: block;
               cursor: pointer;
-              &:hover+ .site-div{
-                height: 106px;
-                transition: height 0.5s ease;
-                border-top: 1px solid rgba(86, 93, 104, 0.2);
-              }
-              &:hover {
-                color: black;
-              }
             }
             .site-div {
               position: absolute;

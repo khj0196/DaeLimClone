@@ -62,20 +62,29 @@
   body header .header-main .header-right ul li a {
     font-size: 12px;
   }
-  body main div .sec01 .sec01-text .main_title {
+  body main div .sec01 .change .sec01-text .main_title {
     font-size: 50px;
   }
-  body main div .sec01 .sec01-text .main_con {
+  body main div .sec01 .change .sec01-text .main_con {
     font-size: 16px;
   }
-  body main div .sec02 .sec02-img01 ul li a .txt-ani .txt-sub .top-txt p {
+  body main div .sec02 .effect .sec02-text02 {
+    margin: 30px 0 10px;
+  }
+  body main div .sec02 .effect .sec02-text02 .sec02-sub {
+    font-size: 48px;
+  }
+  body main div .sec02 .effect .sec02-text02 .sec02-center {
+    font-size: 48px;
+  }
+  body main div .sec02 .effect .sec02-img01 ul li a .txt-ani .txt-sub .top-txt p {
     font-size: 16px;
   }
-  body main div .sec02 .sec02-img01 ul li a .txt-ani .txt-sub .bottom-txt > p {
+  body main div .sec02 .effect .sec02-img01 ul li a .txt-ani .txt-sub .bottom-txt > p {
     font-size: 26px;
     letter-spacing: -1.38px;
   }
-  body main div .sec02 .sec02-text03 .sec02-last {
+  body main div .sec02 .effect .sec02-text03 .sec02-last {
     font-size: 15px;
   }
   body main div .mid > p {
@@ -115,7 +124,7 @@
   body main div .sec06 .sec06-bottom .sec06-ul .sec06-li div p:last-child {
     font-size: 24px;
   }
-  body main div .sec06 .sec06-bottom .sec06-ul .on div p:last-child {
+  body main div .sec06 .sec06-bottom .sec06-ul .sec06-li.on div p:last-child {
     font-size: 36px;
   }
 }
@@ -123,19 +132,22 @@
   body header .header-main .header-right ul li {
     padding: 0 8px;
   }
-  body main div .sec01 .sec01-text .main_title {
+  body main div .sec01 .change .sec01-text .main_title {
     font-size: 34px;
     letter-spacing: -4.08px;
     font-weight: 500;
     margin: 10px 0 28px;
   }
-  body main div .sec02 .sec02-text02 {
+  body main div .sec01 .change .sec01-text .main_con {
+    font-size: 15px;
+  }
+  body main div .sec02 .effect .sec02-text02 {
     margin: 15px 0 10px;
   }
-  body main div .sec02 .sec02-text02 > .sec02-center {
+  body main div .sec02 .effect .sec02-text02 > .sec02-center {
     font-size: 40px;
   }
-  body main div .sec02 .sec02-text02 > .sec02-sub {
+  body main div .sec02 .effect .sec02-text02 > .sec02-sub {
     font-size: 40px;
   }
   body main div .mid > p {
@@ -159,6 +171,9 @@
   body main div .product .product-txt .inTxt-sub {
     font-size: 40px;
   }
+  body main div .sec06 .sec05-top .bottom-logo .inTxt .inTxt-left-btm > div .inTxt-sub {
+    font-size: 40px;
+  }
   body footer .footer-top .page .footer-site > ul li a {
     width: 60px;
     height: 60px;
@@ -173,6 +188,36 @@
     width: 300px;
   }
   body header .header-middle {
+    display: none;
+  }
+}
+@media screen and (max-width: 1100px) {
+  body main div .mid .mid-img-box .img-box-con .contain .img-bottom > ul li::before {
+    width: 150px;
+  }
+  body main div .sec06 .sec06-bottom .sec06-ul .sec06-li {
+    height: 450px;
+    width: 30%;
+  }
+  body main div .sec06 .sec06-bottom .sec06-ul .sec06-li div p:last-child {
+    font-size: 18px;
+  }
+  body main div .sec06 .sec06-bottom .sec06-ul .sec06-li.on div p:last-child {
+    font-size: 24px;
+  }
+  body main div .sec06 .sec06-bottom .sec06-ul .on {
+    width: 58%;
+    transition: 0.3s;
+  }
+}
+@media screen and (max-width: 989px) {
+  body header .header-main .header-left {
+    display: none;
+  }
+  body header .header-main .header-left2 {
+    display: block;
+  }
+  body header .header-main .header-right ul {
     display: none;
   }
 }/*# sourceMappingURL=media.css.map */

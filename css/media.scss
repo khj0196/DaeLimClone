@@ -441,6 +441,26 @@
   body {
     main {
       div {
+        .sec01 {
+          .slide-menu {
+            .slide01 {
+              > ul {
+                > li {
+                  width: 50px;
+                  p {
+                    display: none;
+                  }
+                }
+                .on {
+                  width: 587px;
+                  p {
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+        }
         .mid {
           .mid-img-box {
             .img-box-con {
@@ -492,8 +512,32 @@
     }
   }
 }
+@media screen and (max-width:1024px) {
+  
+}
 @media screen and (max-width:989px) {
   body {
+    .side {
+      width: 50px;
+      height: 50px;
+      border-radius: 12.5px;
+      padding: 11px;
+    }
+    .side-bar {
+      .bar {
+        min-width: 50px;
+        ul {
+          li {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+      .topBtn {
+        width: 50px;
+        height: 50px;
+      }
+    }
     header {
       .header-main {
         .header-left {
@@ -505,6 +549,42 @@
         .header-right {
           ul {
             display: none;
+          }
+        }
+      }
+    }
+    main {
+      div {
+        .sec02 {
+          .sec02-img01 {
+            .sliding-view {
+              > ul {
+                > li {
+                  width: 32.11%;
+                  > a {
+                    .txt-ani {
+                      padding: 20px 23px 30px;
+                      .txt-sub {
+                        > .top-txt {
+                          > p {
+                            font-size: 14px;
+                            &::before {
+                              opacity: 1;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .next {
+              display: block;
+            }
+            .prev {
+              display: block;
+            }
           }
         }
       }

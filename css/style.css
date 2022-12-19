@@ -740,7 +740,7 @@ body main div .mid .mid989 {
   display: none;
   text-align: center;
   transform: translateY(30%);
-  transition: 1s;
+  transition: 1.5s;
   opacity: 0;
 }
 body main div .mid .mid989 ul {

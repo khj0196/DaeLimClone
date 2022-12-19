@@ -32,6 +32,29 @@ canLi.forEach(function(btn, key) {
   }
 })
 
+const elCheck = document.querySelectorAll('.mid-hash ul li')
+const elMid = document.querySelectorAll('.mid-first')
+
+checkIdx = 0;
+elCheck.forEach(function(btn, key) {
+  btn.onclick = function() {
+    elCheck[checkIdx].classList.remove('action');
+    elCheck[key].classList.add('action');
+    checkIdx = key;
+    bbb(key)
+  }
+})
+clickIdx = 0
+function bbb (key) {
+  elMid.forEach(function(btn) {
+    console.log(btn)
+    elMid[clickIdx].classList.remove('click')
+    elMid[key].classList.add('click')
+    clickIdx = key
+  })
+}
+
+
 const sec06 = document.querySelectorAll('.sec06-li')
 
 idx1 = 0;
@@ -143,7 +166,7 @@ window.addEventListener('scroll', function() {
   if (content7.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {
     content7.classList.add('on')
   }
-  if (content8.offsetTop+475 - window.innerHeight * 0.8 < window.pageYOffset) {
+  if (content8.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {
     content8.classList.add('on')
   }
   if (content9.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {

@@ -144,6 +144,7 @@ const content7 = document.querySelector('.sec05-top > .bottom-logo')
 const content8 = document.querySelector('.img-box')
 const content9 = document.querySelector('.sec06 > .sec05-top')
 const content10 = document.querySelector('.sec06-bottom')
+const content11 = document.querySelector('.mid989')
 window.addEventListener('scroll', function() {
   if (content1.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {
     content1.classList.add('on')
@@ -175,6 +176,9 @@ window.addEventListener('scroll', function() {
   }
   if (content10.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {
     content10.classList.add('active')
+  }
+  if (content11.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {
+    content11.classList.add('active')
   }
 })
 const sliCon = document.querySelectorAll('.sliding-view li')

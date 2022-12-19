@@ -774,6 +774,9 @@ body {
         .mid989 {
           display: none;
           text-align: center;
+          transform: translateY(30%);
+          transition: 1s;
+          opacity: 0;
           ul {
             margin-bottom: 20px;
             li {
@@ -849,6 +852,10 @@ body {
               display: block;
             }
           }
+        }
+        .active {
+          transform: translateY(0%);
+          opacity: 1;
         }
       }
       .product {

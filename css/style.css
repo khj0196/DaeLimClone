@@ -739,6 +739,9 @@ body main div .mid .on {
 body main div .mid .mid989 {
   display: none;
   text-align: center;
+  transform: translateY(30%);
+  transition: 1s;
+  opacity: 0;
 }
 body main div .mid .mid989 ul {
   margin-bottom: 20px;
@@ -808,6 +811,10 @@ body main div .mid .mid989 .mid-hash-img .mid-first .center-text > div > p {
 }
 body main div .mid .mid989 .mid-hash-img .click {
   display: block;
+}
+body main div .mid .active {
+  transform: translateY(0%);
+  opacity: 1;
 }
 body main div .product {
   padding: 100px 0 60px;
@@ -1779,6 +1786,9 @@ body footer .footer-last {
   }
   body header .header-main .header-right ul {
     display: none;
+  }
+  body main div .sec01 .slide-menu .slide01 > ul .on {
+    width: 699px;
   }
   body main div .sec02 .sec02-img01 .sliding-view {
     overflow: hidden;

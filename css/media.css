@@ -262,6 +262,9 @@
   body header .header-main .header-right ul {
     display: none;
   }
+  body main div .sec01 .slide-menu .slide01 > ul .on {
+    width: 699px;
+  }
   body main div .sec02 .sec02-img01 .sliding-view {
     overflow: hidden;
   }

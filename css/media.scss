@@ -581,6 +581,17 @@
     }
     main {
       div {
+        .sec01 {
+          .slide-menu {
+            .slide01 {
+              > ul {
+                .on {
+                  width: 699px;
+                }
+              }
+            }
+          }
+        }
         .sec02 {
           .sec02-img01 {
             .sliding-view {

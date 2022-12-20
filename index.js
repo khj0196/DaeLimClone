@@ -295,3 +295,27 @@ if (window.innerWidth <= 989) {
     }
     });
 }
+
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 10,
+  centeredSlides: true,
+  slidesPerView: 3,
+  spaceBetween: 10,
+  slidesPerGroup: 1,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  breakpoints: {
+    989: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    }
+  }
+});

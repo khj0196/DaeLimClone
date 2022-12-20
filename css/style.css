@@ -466,7 +466,6 @@ body main div .sec02 .sec02-img01 .prev {
   display: none;
 }
 body main div .sec02 .sec02-img01 .sliding-view {
-  overflow: hidden;
   position: relative;
 }
 body main div .sec02 .sec02-img01 .sliding-view > ul {
@@ -1119,12 +1118,9 @@ body main div .sec05 .img-box {
   position: relative;
   margin-top: 39px;
 }
-body main div .sec05 .img-box.on .line-txt {
-  position: relative;
-}
 body main div .sec05 .img-box.on .line-txt .line {
   opacity: 1;
-  transform: translateY(70%);
+  transform: translateY(-50%);
 }
 body main div .sec05 .img-box img {
   width: 100%;
@@ -1190,6 +1186,85 @@ body main div .sec05 .img-box .overImg {
 }
 body main div .sec05 .img-box .first {
   display: block;
+}
+body main div .sec05 .swiper {
+  display: none;
+  height: 100%;
+  width: 100%;
+  margin-top: 25px;
+  padding: 0 15px;
+}
+body main div .sec05 .swiper .swiper-wrapper {
+  position: relative;
+  max-width: 1516px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+body main div .sec05 .swiper .swiper-wrapper .swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  overflow: hidden;
+  padding: 0;
+}
+body main div .sec05 .swiper .swiper-wrapper .swiper-slide ul li {
+  overflow: hidden;
+  border-radius: 25px;
+}
+body main div .sec05 .swiper .swiper-wrapper .swiper-slide ul li a {
+  position: absolute;
+  top: 13%;
+  width: 100%;
+}
+body main div .sec05 .swiper .swiper-wrapper .swiper-slide ul li a .land-logo {
+  font-size: 18px;
+  display: inline-block;
+}
+body main div .sec05 .swiper .swiper-wrapper .swiper-slide ul li a .land-logo img {
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+}
+body main div .sec05 .swiper .swiper-wrapper .swiper-slide ul li a .line-bar {
+  position: relative;
+  display: block;
+  width: 84%;
+  height: 1px;
+  margin: 10px 0 25px;
+  background-color: white;
+  opacity: 1;
+  margin: 0 auto;
+}
+body main div .sec05 .swiper .swiper-wrapper .swiper-slide ul li a .line-bar::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 120%;
+  height: 1px;
+  background-color: white;
+  opacity: 0.4;
+}
+body main div .sec05 .swiper .swiper-wrapper .swiper-slide ul li a .desc {
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  margin-top: 56px;
+  opacity: 0;
+}
+body main div .sec05 .swiper .swiper-wrapper .swiper-slide .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body main div .sec06 {
   padding-top: 116px;
@@ -1821,6 +1896,12 @@ body footer .footer-last {
     display: none;
   }
   body main div .mid .mid989 {
+    display: block;
+  }
+  body main div .sec05 .img-box {
+    display: none;
+  }
+  body main div .sec05 .swiper {
     display: block;
   }
 }/*# sourceMappingURL=style.css.map */

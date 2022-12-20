@@ -298,4 +298,10 @@
   body main div .mid .mid989 {
     display: block;
   }
+  body main div .sec05 .img-box {
+    display: none;
+  }
+  body main div .sec05 .swiper {
+    display: block;
+  }
 }/*# sourceMappingURL=media.css.map */

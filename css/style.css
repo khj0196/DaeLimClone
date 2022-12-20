@@ -444,34 +444,12 @@ body main div .sec02 .sec02-img01 {
   display: flex;
   justify-content: space-between;
 }
-body main div .sec02 .sec02-img01 .next {
-  width: 20px;
-  height: 32px;
-  background: url(../icon/slide_next_w.png) no-repeat center;
-  top: 50%;
-  right: 21px;
-  position: absolute;
-  cursor: pointer;
-  display: none;
-  z-index: 9;
-}
-body main div .sec02 .sec02-img01 .prev {
-  width: 20px;
-  height: 32px;
-  background: url(../icon/slide_prev_w.png) no-repeat center;
-  top: 50%;
-  left: 10px;
-  position: absolute;
-  cursor: pointer;
-  display: none;
-}
 body main div .sec02 .sec02-img01 .sliding-view {
   position: relative;
 }
 body main div .sec02 .sec02-img01 .sliding-view > ul {
   width: 100%;
   display: flex;
-  position: relative;
 }
 body main div .sec02 .sec02-img01 .sliding-view > ul > li {
   flex-shrink: 0;
@@ -570,6 +548,14 @@ body main div .sec02 .sec02-img01 .sliding-view > ul > li > a .txt-ani .txt-sub 
   font-size: 25px;
   font-weight: 500;
   letter-spacing: -2.38px;
+}
+body main div .sec02 .sec02-img01 .sliding-view .swiper-button-next {
+  color: white;
+  display: block;
+}
+body main div .sec02 .sec02-img01 .sliding-view .swiper-button-prev {
+  color: white;
+  display: block;
 }
 body main div .sec02 .on {
   opacity: 1;
@@ -1935,10 +1921,10 @@ body footer .footer-last {
   body main div .sec02 .sec02-img01 .sliding-view > ul > li > a .txt-ani .txt-sub > .top-txt > p::before {
     opacity: 1;
   }
-  body main div .sec02 .sec02-img01 .next {
+  body main div .sec02 .sec02-img01 .sliding-view .swiper-button-next {
     display: block;
   }
-  body main div .sec02 .sec02-img01 .prev {
+  body main div .sec02 .sec02-img01 .sliding-view .swiper-button-prev {
     display: block;
   }
   body main div .mid .mid-img-box {

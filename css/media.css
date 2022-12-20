@@ -327,10 +327,10 @@
   body main div .sec02 .sec02-img01 .sliding-view > ul > li > a .txt-ani .txt-sub > .top-txt > p::before {
     opacity: 1;
   }
-  body main div .sec02 .sec02-img01 .next {
+  body main div .sec02 .sec02-img01 .sliding-view .swiper-button-next {
     display: block;
   }
-  body main div .sec02 .sec02-img01 .prev {
+  body main div .sec02 .sec02-img01 .sliding-view .swiper-button-prev {
     display: block;
   }
   body main div .mid .mid-img-box {

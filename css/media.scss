@@ -675,12 +675,12 @@
                   }
                 }
               }
-            }
-            .next {
-              display: block;
-            }
-            .prev {
-              display: block;
+              .swiper-button-next {
+                display: block;
+              }
+              .swiper-button-prev {
+                display: block;
+              }
             }
           }
         }

@@ -145,7 +145,7 @@ const content8 = document.querySelector('.img-box')
 const content9 = document.querySelector('.sec06 > .sec05-top')
 const content10 = document.querySelector('.sec06-bottom')
 const content11 = document.querySelector('.mid989')
-const content12 = document.querySelector('.swiper.mySwiper')
+const content12 = document.querySelector('.true')
 window.addEventListener('scroll', function() {
   if (content1.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {
     content1.classList.add('on')
@@ -185,128 +185,129 @@ window.addEventListener('scroll', function() {
     console.log(content12.offsetTop)
   }
 })
-const sliCon = document.querySelectorAll('.sliding-view li')
-if (window.innerWidth <= 989) {
+// const sliCon = document.querySelectorAll('.sliding-view li')
+// if (window.innerWidth <= 989) {
   
-  $(window).on('load',function(){
-    // 무한 반복 슬라이딩 //
-    // sliCon.style.width = "25%"
-    // sliCon.style.margin = `${15}%`
+//   $(window).on('load',function(){
+//     // 무한 반복 슬라이딩 //
+//     // sliCon.style.width = "25%"
+//     // sliCon.style.margin = `${15}%`
     
-    let current= 0;
-    let show = 3;
-    let container = $('.sliding-view > ul');
-    let length = container.find('>li').length;
-    let view =  $('.sec02-img01').width();
-    let tt = view/show ; //이동거리 -한칸씩 움직이기//
-    let next = $('.sec02-img01 .next');
-    let prev = $('.sec02-img01 .prev');
+//     let current= 0;
+//     let show = 3;
+//     let container = $('.sliding-view > ul');
+//     let length = container.find('>li').length;
+//     let view =  $('.sec02-img01').width();
+//     let tt = view/show ; //이동거리 -한칸씩 움직이기//
+//     let next = $('.sec02-img01 .next');
+//     let prev = $('.sec02-img01 .prev');
     
-    container.css('width','length*tt');//컨테이너 길이 초기화//
+//     container.css('width','length*tt');//컨테이너 길이 초기화//
     
-    next.on({
-    click:function(){
+//     next.on({
+//     click:function(){
     
-    if(current == length) {//마지막 엘리먼트에 다다르면 current 초기화//
-    current = 0;
-    }
+//     if(current == length) {//마지막 엘리먼트에 다다르면 current 초기화//
+//     current = 0;
+//     }
     
-    if(current == 0){
-    //먼저 복사된 엘리먼트 삭제하고 위치 초기화//
-    container.find('>li').eq(length-1).nextAll().remove();
-    container.css({left:0}).stop();
+//     if(current == 0){
+//     //먼저 복사된 엘리먼트 삭제하고 위치 초기화//
+//     container.find('>li').eq(length-1).nextAll().remove();
+//     container.css({left:0}).stop();
     
-    //이동//
-    current++;
-    container.stop().animate({left:tt*current*-1},{duration:900});	
+//     //이동//
+//     current++;
+//     container.stop().animate({left:tt*current*-1},{duration:900});	
     
-    //엘리먼트 복사 - 컨네이너의 자식 모두 복사//
-    let cloneEl = container.children().clone();
-    //복사된 엘리먼트 수 만큼 길이 늘리고 붙이기//
-    // container.css({width:container.innerWidth()+(tt*length)});
-    cloneEl.appendTo(container);
-    }
-    else if(current >= 1){
+//     //엘리먼트 복사 - 컨네이너의 자식 모두 복사//
+//     let cloneEl = container.children().clone();
+//     //복사된 엘리먼트 수 만큼 길이 늘리고 붙이기//
+//     // container.css({width:container.innerWidth()+(tt*length)});
+//     cloneEl.appendTo(container);
+//     }
+//     else if(current >= 1){
     
-    current++;
-    container.stop().animate({left:tt*current*-1},{duration:900});
-    }			
+//     current++;
+//     container.stop().animate({left:tt*current*-1},{duration:900});
+//     }			
     
-    },
-    mouseenter:function(){
-    clearInterval(Sliding);
-    },
-    mouseleave:function(){
-    slidingTimer();
-    }
-    });
+//     },
+//     mouseenter:function(){
+//     clearInterval(Sliding);
+//     },
+//     mouseleave:function(){
+//     slidingTimer();
+//     }
+//     });
     
-    prev.on({
-    click:function(){
-    if(current == 0){
-    //먼저 복사된 엘리먼트 삭제하고 위치 초기화//
-    container.find('>li').eq(length-1).nextAll().remove();
-    container.css({left:0}).stop();
+//     prev.on({
+//     click:function(){
+//     if(current == 0){
+//     //먼저 복사된 엘리먼트 삭제하고 위치 초기화//
+//     container.find('>li').eq(length-1).nextAll().remove();
+//     container.css({left:0}).stop();
         
-    //인덱스 순서를 length로 치환해줌//
-    current=length;
+//     //인덱스 순서를 length로 치환해줌//
+//     current=length;
     
-    //앞쪽으로 엘리먼트 복사해서 붙이기//
-    //길이 & 위치 초기화 -앞쪽으로 붙었기 떄문에 늘어난 길이 만큼 left시작 위치가 -가 되어야함//
-    let cloneEl = container.children().clone();
-    container.css({left:tt*length*-1,width:container.innerWidth()+(tt*length)}).stop();
-    cloneEl.prependTo(container);
+//     //앞쪽으로 엘리먼트 복사해서 붙이기//
+//     //길이 & 위치 초기화 -앞쪽으로 붙었기 떄문에 늘어난 길이 만큼 left시작 위치가 -가 되어야함//
+//     let cloneEl = container.children().clone();
+//     container.css({left:tt*length*-1,width:container.innerWidth()+(tt*length)}).stop();
+//     cloneEl.prependTo(container);
     
-    //붙이고 나서 바로 이동 되도록//
-    current--;
-    container.stop().animate({left:tt*current*-1},{duration:900});
-    }
-    else if(current > 0 ){
-    current--;
-    container.stop().animate({left:tt*current*-1},{duration:900});
-    }
+//     //붙이고 나서 바로 이동 되도록//
+//     current--;
+//     container.stop().animate({left:tt*current*-1},{duration:900});
+//     }
+//     else if(current > 0 ){
+//     current--;
+//     container.stop().animate({left:tt*current*-1},{duration:900});
+//     }
     
-    },
-    mouseenter:function(){
-    clearInterval(Sliding);
-    },
-    mouseleave:function(){
-    slidingTimer();
-    }
-    });
+//     },
+//     mouseenter:function(){
+//     clearInterval(Sliding);
+//     },
+//     mouseleave:function(){
+//     slidingTimer();
+//     }
+//     });
     
     
-    //컨테이너에 hover 되면 타이머 일시정지//
-    container.on({
-    mouseenter:function(){
-    clearInterval(Sliding);
-    },
-    mouseleave:function(){
-    slidingTimer();
-    }
-    });
+//     //컨테이너에 hover 되면 타이머 일시정지//
+//     container.on({
+//     mouseenter:function(){
+//     clearInterval(Sliding);
+//     },
+//     mouseleave:function(){
+//     slidingTimer();
+//     }
+//     });
     
-    slidingTimer();
+//     slidingTimer();
     
-    //자동 슬라이딩 타미머 함수 정의//
-    function slidingTimer(){
-    Sliding = setInterval(function(){
+//     //자동 슬라이딩 타미머 함수 정의//
+//     function slidingTimer(){
+//     Sliding = setInterval(function(){
     
-    next.trigger('click');
+//     next.trigger('click');
     
-    },3000);
-    }
-    });
-}
+//     },3000);
+//     }
+//     });
+// }
+
 
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 10,
-  centeredSlides: true,
+  // centeredSlides: true,
   slidesPerView: 3,
   spaceBetween: 10,
-  slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
+  speed: 1000,
   autoplay: {
     delay: 3500,
     disableOnInteraction: false
@@ -315,10 +316,22 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   breakpoints: {
     989: {
       slidesPerView: 3,
       spaceBetween: 10,
-    }
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      slidesPerGroup: 1,
+    } 
   }
 });

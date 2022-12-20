@@ -758,6 +758,7 @@ body main div .mid .mid989 ul li {
   line-height: 37px;
   border: 1px solid rgb(23, 23, 23);
   transition: 0.5s;
+  cursor: pointer;
 }
 body main div .mid .mid989 ul .action {
   color: #fff;
@@ -1833,6 +1834,22 @@ body footer .footer-last {
     line-height: 23px;
     width: 100%;
     text-align: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body footer .footer-top .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 30px;
+  }
+  body footer .footer-top .page .footer-middle {
+    margin: 40px 0;
+    width: auto;
+  }
+  body footer .footer-top .page .family {
+    justify-content: center;
   }
 }
 @media screen and (max-width: 989px) {

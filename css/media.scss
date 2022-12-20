@@ -541,6 +541,28 @@
     }
   }
 }
+@media screen and (max-width:1000px) {
+  body {
+    footer {
+      .footer-top {
+        .page {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 40px 0 30px;
+          .footer-middle {
+            margin: 40px 0;
+            width: auto;
+          }
+          .family {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width:989px) {
   body {
     .side {

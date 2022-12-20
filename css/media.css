@@ -235,6 +235,22 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 1000px) {
+  body footer .footer-top .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 30px;
+  }
+  body footer .footer-top .page .footer-middle {
+    margin: 40px 0;
+    width: auto;
+  }
+  body footer .footer-top .page .family {
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 989px) {
   body .side {
     width: 50px;

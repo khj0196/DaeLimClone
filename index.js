@@ -309,7 +309,7 @@ var swiper = new Swiper(".mySwiper", {
   loopFillGroupWithBlank: true,
   speed: 1000,
   autoplay: {
-    delay: 3500,
+    delay: 2500,
     disableOnInteraction: false
   },
   pagination: {
@@ -334,4 +334,12 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerGroup: 1,
     } 
   }
+});
+$(".mySwiper").each(function(elem, target){
+  var swp = target.swiper;
+  $(this).hover(function() {
+      swp.autoplay.stop();
+  }, function() {
+      swp.autoplay.start();
+  });
 });

@@ -145,6 +145,7 @@ const content8 = document.querySelector('.img-box')
 const content9 = document.querySelector('.sec06 > .sec05-top')
 const content10 = document.querySelector('.sec06-bottom')
 const content11 = document.querySelector('.mid989')
+const content12 = document.querySelector('.swiper.mySwiper')
 window.addEventListener('scroll', function() {
   if (content1.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {
     content1.classList.add('on')
@@ -172,13 +173,16 @@ window.addEventListener('scroll', function() {
   }
   if (content9.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {
     content9.classList.add('on')
-    console.log(content9)
   }
   if (content10.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {
     content10.classList.add('active')
   }
   if (content11.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {
     content11.classList.add('active')
+  }
+  if (content12.offsetTop - window.innerHeight * 0.8 < window.pageYOffset) {
+    content12.classList.add('on')
+    console.log(content12.offsetTop)
   }
 })
 const sliCon = document.querySelectorAll('.sliding-view li')
@@ -197,7 +201,6 @@ if (window.innerWidth <= 989) {
     let tt = view/show ; //이동거리 -한칸씩 움직이기//
     let next = $('.sec02-img01 .next');
     let prev = $('.sec02-img01 .prev');
-    console.log(view)
     
     container.css('width','length*tt');//컨테이너 길이 초기화//
     

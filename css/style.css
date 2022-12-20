@@ -756,7 +756,7 @@ body main div .mid .mid989 ul li {
   height: 39px;
   border-radius: 20px;
   line-height: 37px;
-  border: 1px solid rgb(23, 23, 23);
+  border: 1px solid #e1e1e1;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -1189,21 +1189,24 @@ body main div .sec05 .img-box .first {
   display: block;
 }
 body main div .sec05 .swiper {
+  position: relative;
   display: none;
   height: 100%;
   width: 100%;
   margin-top: 25px;
   padding: 0 15px;
+  opacity: 0;
+  top: -50%;
+  transition: 1s;
+  transform: translateY(50%);
 }
 body main div .sec05 .swiper .swiper-wrapper {
-  position: relative;
   max-width: 1516px;
   width: 100%;
   margin: 0 auto;
   padding-bottom: 40px;
 }
 body main div .sec05 .swiper .swiper-wrapper .swiper-slide {
-  position: relative;
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -1266,6 +1269,10 @@ body main div .sec05 .swiper .swiper-wrapper .swiper-slide .swiper-slide img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+body main div .sec05 .on {
+  opacity: 1;
+  transform: translateY(0%);
 }
 body main div .sec06 {
   padding-top: 116px;
@@ -1794,13 +1801,13 @@ body footer .footer-last {
 }
 @media screen and (max-width: 1100px) {
   body main div .sec01 .slide-menu .slide01 > ul > li {
-    width: 50px;
+    width: 15%;
   }
   body main div .sec01 .slide-menu .slide01 > ul > li p {
     display: none;
   }
   body main div .sec01 .slide-menu .slide01 > ul .on {
-    width: 749px;
+    width: 50%;
   }
   body main div .sec01 .slide-menu .slide01 > ul .on p {
     display: block;
@@ -1827,6 +1834,12 @@ body footer .footer-last {
   body main div .sec01 .slide-menu {
     bottom: 30px;
   }
+  body main div .sec04 .sec04-box .right {
+    height: 1095px;
+  }
+  body main div .sec04 .sec04-box .right .text > div {
+    padding-bottom: 20px;
+  }
   body main div .sec04 .sec04-box .right .text .hash {
     font-size: 10px;
     padding: 0 8px;
@@ -1834,6 +1847,22 @@ body footer .footer-last {
     line-height: 23px;
     width: 100%;
     text-align: center;
+  }
+  body main div .sec04 .sec04-box .right .text .first {
+    font-size: 17px;
+    padding: 9px 0 12px;
+  }
+  body main div .sec04 .sec04-box .right .item03 {
+    top: 430px;
+  }
+  body main div .sec04 .sec04-box .right .item04 {
+    top: 430px;
+  }
+  body main div .sec04 .sec04-box .right .item05 {
+    top: 762px;
+  }
+  body main div .sec04 .sec04-box .right .item06 {
+    top: 762px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -1879,8 +1908,11 @@ body footer .footer-last {
   body header .header-main .header-right ul {
     display: none;
   }
+  body main div .sec01 .slide-menu .slide01 > ul > li {
+    width: 15%;
+  }
   body main div .sec01 .slide-menu .slide01 > ul .on {
-    width: 699px;
+    width: 50%;
   }
   body main div .sec02 .sec02-img01 .sliding-view {
     overflow: hidden;
@@ -1915,10 +1947,38 @@ body footer .footer-last {
   body main div .mid .mid989 {
     display: block;
   }
+  body main div .sec05 .sec05-top .bottom-logo .inTxt .inTxt-left-btm .inTxt-right > a {
+    width: 180px;
+    background: url(../icon/more_plus.png) no-repeat 88%;
+    background-size: 12px;
+    padding: 0 25px;
+    line-height: 45px;
+    background-color: #326aff;
+    height: 47px;
+  }
+  body main div .sec05 .sec05-top .bottom-logo .inTxt .inTxt-left-btm .inTxt-right > a p {
+    letter-spacing: 0.85px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 47px;
+  }
   body main div .sec05 .img-box {
     display: none;
   }
   body main div .sec05 .swiper {
     display: block;
+  }
+}
+@media screen and (max-width: 860px) {
+  body main div .mid .mid989 ul {
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  body main div .mid .mid989 ul li {
+    width: 130px;
+    font-size: 14px;
+    margin-bottom: 9px;
+    padding: 0;
   }
 }/*# sourceMappingURL=style.css.map */

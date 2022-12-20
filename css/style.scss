@@ -789,7 +789,7 @@ body {
               height: 39px;
               border-radius: 20px;
               line-height: 37px;
-              border: 1px solid rgb(23, 23, 23);
+              border: 1px solid #e1e1e1;
               transition: 0.5s;
               cursor: pointer;
             }
@@ -1247,19 +1247,22 @@ body {
           }
         }
         .swiper {
+          position: relative;
           display: none;
           height: 100%;
           width: 100%;
           margin-top: 25px;
           padding: 0 15px;
+          opacity: 0;
+          top: -50%;
+          transition: 1s;
+          transform: translateY(50%);
           .swiper-wrapper {
-            position: relative;
             max-width: 1516px;
             width: 100%;
             margin: 0 auto;
             padding-bottom: 40px;
             .swiper-slide {
-              position: relative;
               text-align: center;
               font-size: 18px;
               background: #fff;
@@ -1334,6 +1337,10 @@ body {
               }
             }
           }
+        }
+        .on {
+          opacity: 1;
+          transform: translateY(0%);
         }
       }
       .sec06 {

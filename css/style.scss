@@ -1165,10 +1165,9 @@ body {
           margin-top: 39px;
           &.on{
             .line-txt{
-              position: relative;
               .line{
                 opacity: 1;
-                transform: translateY(70%);
+                transform: translateY(-50%);
               }
             }
           }

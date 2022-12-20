@@ -446,7 +446,7 @@ body main div .sec02 .sec02-img01 {
 }
 body main div .sec02 .sec02-img01 .sliding-view {
   position: relative;
-  padding: 10px;
+  padding: 10px 9px;
 }
 body main div .sec02 .sec02-img01 .sliding-view > ul {
   width: 100%;
